@@ -22,8 +22,11 @@ Esse último foi incluído de propósito para ilustrar como o framework de teste
 ---
 
 ## ▶️ Como Rodar os Testes
+No terminal, dentro da pasta do projeto. O jeito **correto** de rodar é usando:
+dart test
 
-### 1. Instalar dependência de testes
-No terminal, dentro da pasta do projeto:
-```bash
-dart pub add test --dev
+Isso porque o comando dart test é o responsável por procurar automaticamente os arquivos dentro da pasta test/ e executar todos os casos de teste definidos com package:test.
+
+Rodando em modo detalhado:
+dart test --reporter expanded
+
