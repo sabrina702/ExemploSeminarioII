@@ -12,7 +12,7 @@ void main() {
     });
 
     test('Numero negativo', () {
-      expect(() => fatorial(-3), throwsArgumentError);
+      expect(() => fatorial(-3), throwsA(isA<ArgumentError>()));
     });
 
     test('Teste proposital falha', () {
